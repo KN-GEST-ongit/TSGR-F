@@ -1,0 +1,32 @@
+cff-version: 1.2.0
+message: "If you use TSGR-F, its dataset, or its reported reference results in scientific work, please cite the associated publication when available."
+title: "TSGR-F: Trustworthy Static Gesture Recognition Framework"
+type: software
+version: 0.42.15
+date-released: 2026-09-07
+license: MIT
+repository-code: "https://github.com/KN-GEST-ongit/TSGR-F"
+authors:
+  - family-names: Kalandyk
+    given-names: Dawid
+    orcid: "https://orcid.org/0000-0002-7317-5499"
+    website: "https://github.com/DawidKalandyk"
+  - family-names: Makowiecka
+    given-names: Zuzanna
+    orcid: "https://orcid.org/0009-0004-1333-6627"
+    website: "https://github.com/MZuza"
+  - family-names: Stępień
+    given-names: Igor
+    orcid: "https://orcid.org/0000-0001-6614-1218"
+    website: "https://github.com/Igorles"
+preferred-citation:
+  type: article
+  title: "TSGR-F: Trustworthy Static Gesture Recognition Framework"
+  authors:
+    - family-names: Kalandyk
+      given-names: Dawid
+    - family-names: Makowiecka
+      given-names: Zuzanna
+    - family-names: Stępień
+      given-names: Igor
+  notes: "Peer-reviewed publication in preparation; DOI to be added after publication."

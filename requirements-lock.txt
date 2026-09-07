@@ -1,0 +1,8 @@
+# Reference runtime environment used for the reported TSGR-F experiments.
+# Reference interpreter: CPython 3.12.10, 64-bit, Windows 11 x86-64.
+numpy==2.5.1
+opencv-contrib-python==4.13.0.92
+mediapipe==0.10.35
+PyYAML==6.0.3
+matplotlib==3.11.1
+openpyxl==3.1.5

@@ -1,0 +1,195 @@
+project:
+  name: TrustworthyStaticGestureRecognitionFramework
+  short_name: TSGR-F
+  version: 0.42.15
+paths:
+  recordings_root: recordings
+  runs_root: runs
+  model_path: models/hand_landmarker.task
+camera:
+  camera_index: 0
+  target_fps: 30.0
+  width: 1280
+  height: 720
+  backend: dshow
+  fallback_to_auto_backend: true
+  preferred_fourcc: MJPG
+  buffer_size: 1
+  input_is_mirrored: false
+  preview: true
+recording:
+  image_extension: .png
+  png_compression: 3
+  writer_queue_size: 256
+  save_cropped_frames: true
+processing:
+  enabled: true
+  queue_size: 3
+  drop_oldest_when_busy: true
+  save_live_overlays: false
+mediapipe:
+  model_url: https://storage.googleapis.com/mediapipe-models/hand_landmarker/hand_landmarker/float16/1/hand_landmarker.task
+  num_hands: 2
+  min_hand_detection_confidence: 0.5
+  min_hand_presence_confidence: 0.5
+  min_tracking_confidence: 0.5
+  invert_handedness_labels: false
+  suppress_native_warnings: true
+  running_mode: video
+  strict_right_hand_only: true
+  handedness_policy: reject_left
+  image_detection:
+    active_profile: high_recall
+    profiles:
+      fast:
+        passes:
+        - name: standard
+          min_hand_detection_confidence: 0.5
+          min_hand_presence_confidence: 0.5
+          padding_ratio: 0.0
+      balanced:
+        passes:
+        - name: standard
+          min_hand_detection_confidence: 0.5
+          min_hand_presence_confidence: 0.5
+          padding_ratio: 0.0
+        - name: relaxed
+          min_hand_detection_confidence: 0.35
+          min_hand_presence_confidence: 0.35
+          padding_ratio: 0.0
+      high_recall:
+        passes:
+        - name: standard
+          min_hand_detection_confidence: 0.5
+          min_hand_presence_confidence: 0.5
+          padding_ratio: 0.0
+        - name: relaxed
+          min_hand_detection_confidence: 0.35
+          min_hand_presence_confidence: 0.35
+          padding_ratio: 0.0
+        - name: padded_relaxed
+          min_hand_detection_confidence: 0.35
+          min_hand_presence_confidence: 0.35
+          padding_ratio: 0.25
+        - name: padded_max_recall
+          min_hand_detection_confidence: 0.25
+          min_hand_presence_confidence: 0.25
+          padding_ratio: 0.25
+  video_detection:
+    active_profile: balanced
+    profiles:
+      fast:
+        min_hand_detection_confidence: 0.6
+        min_hand_presence_confidence: 0.5
+        min_tracking_confidence: 0.5
+      balanced:
+        min_hand_detection_confidence: 0.5
+        min_hand_presence_confidence: 0.5
+        min_tracking_confidence: 0.5
+      high_recall:
+        min_hand_detection_confidence: 0.35
+        min_hand_presence_confidence: 0.65
+        min_tracking_confidence: 0.65
+  video_recovery:
+    enabled: false
+    after_consecutive_failures: 1
+    image_profile: high_recall
+roi:
+  enabled: true
+  inference_enabled: false
+  margin_ratio: 0.3
+  smoothing_alpha: 0.35
+  full_frame_interval: 30
+  maximum_missed_frames: 2
+  minimum_size_px: 96
+normalization:
+  enabled: true
+  primary_scale: wrist_middle_mcp
+  comparison_scale: middle_finger_polyline
+  minimum_axis_norm: 1.0e-08
+  minimum_scale: 1.0e-06
+  save_compact_npz: true
+features:
+  enabled: true
+  schema_version: tsgr_full_features_v1
+classification_input:
+  landmark_source: raw
+  scale: wrist_middle_mcp
+  export_all_feature_branches: true
+temporal_filter:
+  active: none
+  maximum_gap_s: 0.25
+  reset_on_missing_hand: true
+  filters:
+    none: {}
+    ema:
+      alpha: 0.35
+    one_euro:
+      minimum_cutoff_hz: 1.0
+      beta: 0.02
+      derivative_cutoff_hz: 1.0
+    kalman:
+      process_acceleration_variance: 0.5
+      measurement_variance: 0.0001
+      initial_position_variance: 0.001
+      initial_velocity_variance: 1.0
+    half_pound:
+      minimum_cutoff_hz: 1.0
+      maximum_cutoff_hz: 5.0
+      maximum_absolute_derivative: 1.5
+temporal_geometry:
+  window_size: 15
+  minimum_history: 5
+  maximum_scale_relative_deviation: 0.35
+  maximum_ratio_relative_deviation: 0.35
+  maximum_bone_relative_step: 0.3
+  maximum_angular_speed_deg_s: 900.0
+filter_benchmark:
+  high_frequency_threshold_hz: 5.0
+  maximum_lag_frames: 8
+quality:
+  minimum_sharpness: 25.0
+  minimum_tenengrad: 100.0
+  sharpness_metric: roi_laplacian_variance
+  sharpness_roi_margin_ratio: 0.15
+  minimum_mean_brightness: 25.0
+  maximum_mean_brightness: 235.0
+  maximum_underexposed_fraction: 0.45
+  maximum_overexposed_fraction: 0.25
+  minimum_hand_bbox_area_ratio: 0.015
+  maximum_hand_bbox_area_ratio: 0.9
+  minimum_border_margin_ratio: 0.005
+image_folder:
+  extensions:
+  - .png
+  - .jpg
+  - .jpeg
+  - .bmp
+  - .tif
+  - .tiff
+  recursive: false
+  synthetic_fps: 30.0
+reference_models:
+  branches:
+  - raw.wrist_middle_mcp
+  - filtered.wrist_middle_mcp
+  session_balance:
+    mode: minimum_available
+    fixed_count: null
+    seed: 2026
+  outlier_detection:
+    feature_z_threshold: 6.0
+    robust_rms_threshold: 4.0
+    maximum_extreme_fraction: 0.05
+    scale_floor: 1.0e-06
+    maximum_reported_features: 8
+    minimum_accepted_frames_per_session: 10
+  feature_mask:
+    exact_tolerance: 1.0e-12
+    absolute_std_threshold: 1.0e-08
+    relative_std_threshold: 1.0e-06
+  compact_feature_mask:
+    correlation_threshold: 0.995
+  covariance:
+    shrinkage: 0.1
+    diagonal_floor: 1.0e-08

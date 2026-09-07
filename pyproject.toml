@@ -1,0 +1,84 @@
+[build-system]
+requires = ["setuptools>=75", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "tsgr-framework"
+version = "0.42.15"
+description = "Trustworthy Static Gesture Recognition Framework"
+readme = "README.md"
+requires-python = ">=3.12,<3.13"
+license = {text = "MIT"}
+authors = [
+  {name = "Dawid Kalandyk"},
+  {name = "Zuzanna Makowiecka"},
+  {name = "Igor Stępień"},
+]
+keywords = ["gesture recognition", "computer vision", "MediaPipe", "PJM", "research reproducibility"]
+classifiers = [
+  "Development Status :: 4 - Beta",
+  "License :: OSI Approved :: MIT License",
+  "Programming Language :: Python :: 3",
+  "Programming Language :: Python :: 3.12",
+  "Topic :: Scientific/Engineering :: Artificial Intelligence",
+  "Topic :: Scientific/Engineering :: Image Processing",
+]
+dependencies = [
+  "numpy==2.5.1",
+  "opencv-contrib-python==4.13.0.92",
+  "mediapipe==0.10.35",
+  "PyYAML==6.0.3",
+  "matplotlib==3.11.1",
+  "openpyxl==3.1.5",
+]
+
+[project.optional-dependencies]
+dev = ["pytest==9.0.2"]
+
+[project.urls]
+Homepage = "https://github.com/KN-GEST-ongit/TSGR-F"
+Repository = "https://github.com/KN-GEST-ongit/TSGR-F"
+Issues = "https://github.com/KN-GEST-ongit/TSGR-F/issues"
+Dataset = "https://github.com/KN-GEST-ongit/TSGR-F/releases"
+
+[project.scripts]
+tsgr-download-model = "tsgr.cli.download_model:main"
+tsgr-download-dataset = "tsgr.cli.download_dataset:main"
+tsgr-audit-dataset = "tsgr.cli.audit_public_dataset:main"
+tsgr-process-training = "tsgr.cli.process_experiment_training:main"
+tsgr-process-testing = "tsgr.cli.process_experiment_testing:main"
+tsgr-generate-folds = "tsgr.cli.generate_experiment_folds:main"
+tsgr-build-hand-presence-reference = "tsgr.cli.build_hand_presence_reference:main"
+tsgr-build-fold-models = "tsgr.cli.build_experiment_models:main"
+tsgr-analyze-test-ground-truth = "tsgr.cli.analyze_test_ground_truth:main"
+tsgr-build-fixed-routing = "tsgr.cli.build_fixed_routing_models:main"
+tsgr-evaluate-fixed-routing = "tsgr.cli.evaluate_fixed_routing:main"
+tsgr-build-fixed-acceptance = "tsgr.cli.build_fixed_acceptance:main"
+tsgr-evaluate-fixed-end-to-end = "tsgr.cli.evaluate_fixed_end_to_end:main"
+tsgr-bootstrap-fixed-end-to-end = "tsgr.cli.bootstrap_fixed_end_to_end:main"
+tsgr-benchmark-fixed-routing = "tsgr.cli.benchmark_fixed_routing:main"
+tsgr-run-plcc-sensitivity = "tsgr.cli.run_plcc_sensitivity:main"
+tsgr-build-sgrf-baselines = "tsgr.cli.build_sgrf_baselines:main"
+tsgr-evaluate-sgrf-baselines = "tsgr.cli.evaluate_sgrf_baselines:main"
+tsgr-report-sgrf-evaluation-progress = "tsgr.cli.report_sgrf_evaluation_progress:main"
+tsgr-export-sgrf-evaluation-shard = "tsgr.cli.export_sgrf_evaluation_shard:main"
+tsgr-import-sgrf-evaluation-shard = "tsgr.cli.import_sgrf_evaluation_shard:main"
+tsgr-audit-sgrf-baselines = "tsgr.cli.audit_sgrf_baselines:main"
+tsgr-audit-sgrf-evaluation = "tsgr.cli.audit_sgrf_evaluation_completeness:main"
+tsgr-export-sgrf-results = "tsgr.cli.export_sgrf_portable_bundle:main"
+tsgr-merge-method-results = "tsgr.cli.merge_method_results:main"
+tsgr-verify-reference-results = "tsgr.cli.verify_reference_results:main"
+
+[tool.setuptools]
+package-dir = {"" = "src"}
+include-package-data = true
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.setuptools.package-data]
+"tsgr.resources" = ["default.yaml"]
+
+[tool.pytest.ini_options]
+addopts = "-ra"
+testpaths = ["tests"]

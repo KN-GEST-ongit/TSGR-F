@@ -1,0 +1,905 @@
+{
+  "schema_version": "tsgr_public_code_release_manifest_v1",
+  "release_version": "0.42.15",
+  "repository": "https://github.com/KN-GEST-ongit/TSGR-F",
+  "package": "tsgr-framework",
+  "python_reference": "CPython 3.12.10",
+  "file_count": 179,
+  "files": [
+    {
+      "path": ".gitignore",
+      "size_bytes": 126,
+      "sha256": "1307a7c0c5ca33827b57ef6780e8373cff4f84199905e1e227038d879306f5ba"
+    },
+    {
+      "path": "CITATION.cff",
+      "size_bytes": 1182,
+      "sha256": "a21c5c21089c68d17b93310f0aeb77baba802a6bc8eedb095525607cd2453e80"
+    },
+    {
+      "path": "configs/default.yaml",
+      "size_bytes": 5245,
+      "sha256": "11b9ba6d3ccd90df890e050fdf7021981f8dcf6bbf7dc78c774586dcd4636347"
+    },
+    {
+      "path": "configs/fixed_routing.json",
+      "size_bytes": 678,
+      "sha256": "de86cf670b0936bfd439fcfae792f78d48371b2ac2858a7587aedb16d46f3393"
+    },
+    {
+      "path": "docs/COMMANDS.md",
+      "size_bytes": 1677,
+      "sha256": "45dc5fed6fdf0653978d044122f6c4429e65b92af051bdc2890f4bf50d4d78b7"
+    },
+    {
+      "path": "docs/DATASET.md",
+      "size_bytes": 1817,
+      "sha256": "7d87208e5f0d4deb684664465ae811accd468c571a0ba64ca7532b87eb10bde2"
+    },
+    {
+      "path": "docs/REPRODUCIBILITY.md",
+      "size_bytes": 4087,
+      "sha256": "365719969906cce409d935478f1c421c946af668fddcb42faad66283b9e88187"
+    },
+    {
+      "path": "examples/reproduce_core.ps1",
+      "size_bytes": 2092,
+      "sha256": "5c951fea8a67e4d8a9cf1c260a105df86a6b6cd2e1b2a793a2320fbf1160287c"
+    },
+    {
+      "path": "examples/single_image_prediction.py",
+      "size_bytes": 364,
+      "sha256": "802ef8c02ec3fb9e21202537041c8e4b069c4ef0e7e143086c807a71406fc262"
+    },
+    {
+      "path": "external_requirements/README.md",
+      "size_bytes": 1644,
+      "sha256": "69384480bfc532198d226ab1e3fb993dcfbc40438facbf1a4242ad1d2bf165a2"
+    },
+    {
+      "path": "external_requirements/sgrf_3_2_0_requirements.txt",
+      "size_bytes": 366,
+      "sha256": "114c31046ebf6b948f143051497f6740123779dd84da623ee47be36f96212aec"
+    },
+    {
+      "path": "external_requirements/sgrf_method_options.example.json",
+      "size_bytes": 291,
+      "sha256": "ce8bba4220f05869ccc1c808130b73950a6473baa46abff09747ffebfe7b49d7"
+    },
+    {
+      "path": "LICENSE",
+      "size_bytes": 1107,
+      "sha256": "bafe75891f180c223fe6e0f146e2018d888d67b024d025b8111ca3632759ca77"
+    },
+    {
+      "path": "pyproject.toml",
+      "size_bytes": 3366,
+      "sha256": "28f293438e588971c54bfd7cc94e91546ed7f0420962475091864e88acc92b7d"
+    },
+    {
+      "path": "README.md",
+      "size_bytes": 14673,
+      "sha256": "e1aef895b01770a2ec99f8539adf89b6a23c3b026c2cd8fc34cf397a3fe3ea49"
+    },
+    {
+      "path": "reference_results/README.md",
+      "size_bytes": 328,
+      "sha256": "9625f4fe2cc3daeab80c55b87f385ecfb19653d2fb15d7ac939f8ebc22cbc4b1"
+    },
+    {
+      "path": "requirements-dev-lock.txt",
+      "size_bytes": 39,
+      "sha256": "a897e28f5be1f62d0b6e0cb7d5e7d01b29724ea16f5149df7b3c4e7a5a5eb308"
+    },
+    {
+      "path": "requirements-lock.txt",
+      "size_bytes": 257,
+      "sha256": "3ffaee27c0af645ffe63772b3739732e2966138eaacc2f85e24c92785d11f718"
+    },
+    {
+      "path": "scripts/reproduce_reference.ps1",
+      "size_bytes": 29348,
+      "sha256": "67ed4b9604f6bed94447ca449178173e9b0f9511e3235ea880c5cc95bf2d389c"
+    },
+    {
+      "path": "src/tsgr/__init__.py",
+      "size_bytes": 739,
+      "sha256": "1e4c0419e594908b33680e3dc76c67f57979372a4fd66b2c68f32eb30b74aac3"
+    },
+    {
+      "path": "src/tsgr/analysis/__init__.py",
+      "size_bytes": 67,
+      "sha256": "6d4eba91e4366bb5e47f07f06e78f9bf26f270ac790680a65f8eaa2967112cef"
+    },
+    {
+      "path": "src/tsgr/analysis/audit_utils.py",
+      "size_bytes": 7610,
+      "sha256": "0b28ab788067c30bfc1c9107d01bdf45b6578c202f30bb7e1c4ac378bee2f180"
+    },
+    {
+      "path": "src/tsgr/analysis/training_detection_audit.py",
+      "size_bytes": 8648,
+      "sha256": "eabd897331d2b49b416a7ebc7395cb5d874b3f7fb5f618ad39e662a1f2cdcfc4"
+    },
+    {
+      "path": "src/tsgr/baselines/__init__.py",
+      "size_bytes": 216,
+      "sha256": "27ff060e34726771204bab3e2f15250544f05064abb632103c2cb6ac5a4a2021"
+    },
+    {
+      "path": "src/tsgr/baselines/registry.py",
+      "size_bytes": 5257,
+      "sha256": "c1981e05081351a277add94aba0bf73a64cfad874396c93174772ee8a522d9b5"
+    },
+    {
+      "path": "src/tsgr/baselines/result_merge.py",
+      "size_bytes": 3190,
+      "sha256": "3d4598a449f188c398ccbd69ba5a7befe1b9c375d31b5929246bf0a53960e3d6"
+    },
+    {
+      "path": "src/tsgr/baselines/sgrf_bridge.py",
+      "size_bytes": 6926,
+      "sha256": "0a54b3b9c76fc172724e43abc33446d617a4a610fac6f9144a32de6e95f4cff2"
+    },
+    {
+      "path": "src/tsgr/baselines/sgrf_distributed.py",
+      "size_bytes": 14336,
+      "sha256": "24e03d48dbc65c5d57b7fb3872327825c0816be409edf41620118c721158f181"
+    },
+    {
+      "path": "src/tsgr/baselines/sgrf_evaluation.py",
+      "size_bytes": 49896,
+      "sha256": "3ddb47333f48107380e7d0d39859797466cbfa6c62e5a3cbd8d57b0065f63743"
+    },
+    {
+      "path": "src/tsgr/baselines/sgrf_models.py",
+      "size_bytes": 15772,
+      "sha256": "cb742f9839695734b80c1aa196b07a3ece2262ea56949da5184ca80e1f1e2295"
+    },
+    {
+      "path": "src/tsgr/baselines/sgrf_portability.py",
+      "size_bytes": 19513,
+      "sha256": "544dc8d9c55ef5151378e4dce1a66b275c25749ea3b7589a880a5a70dda9ee30"
+    },
+    {
+      "path": "src/tsgr/baselines/sgrf_worker.py",
+      "size_bytes": 21528,
+      "sha256": "f142f1435e892313e2e0970a599991808fe6492bdd9ac20d197bffc848395515"
+    },
+    {
+      "path": "src/tsgr/cli/__init__.py",
+      "size_bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "src/tsgr/cli/analyze_test_ground_truth.py",
+      "size_bytes": 832,
+      "sha256": "7e56bf403d8e40633ec8a519c80a8d63d96ad1b42ce5b85548a43284e9dd27ba"
+    },
+    {
+      "path": "src/tsgr/cli/audit_public_dataset.py",
+      "size_bytes": 1287,
+      "sha256": "d1113d5607784998b92200585523e3cbd6f2317250149f334d48805c4648b9db"
+    },
+    {
+      "path": "src/tsgr/cli/audit_sgrf_baselines.py",
+      "size_bytes": 1590,
+      "sha256": "9da84ab39e37f6230c449fcfb94613033ef257c66aa5fd816685862a8a089ee4"
+    },
+    {
+      "path": "src/tsgr/cli/audit_sgrf_evaluation_completeness.py",
+      "size_bytes": 2364,
+      "sha256": "28ce60cb4d99c2b2c9b5650cbcf6e5beb9e871a1ab41efc787d1d2e5837d3b57"
+    },
+    {
+      "path": "src/tsgr/cli/benchmark_fixed_routing.py",
+      "size_bytes": 2103,
+      "sha256": "c9a5ce3482efc8eff5b1a5cd63ea164aafce426cc109c7b52b7f740e71e907f1"
+    },
+    {
+      "path": "src/tsgr/cli/bootstrap_fixed_end_to_end.py",
+      "size_bytes": 982,
+      "sha256": "cd2068eae056d12dd1cfdeca48bf059d6ae382f742628766b7594fe4769d5429"
+    },
+    {
+      "path": "src/tsgr/cli/build_experiment_models.py",
+      "size_bytes": 4409,
+      "sha256": "5088b6305ff754e5ac9ccb386ce86c86a6592836bee6af6d3a85c15b2483fbea"
+    },
+    {
+      "path": "src/tsgr/cli/build_fixed_acceptance.py",
+      "size_bytes": 1586,
+      "sha256": "304d807711159dcd770d24bce74e43eae87e509168a3916a35358e7ea1577106"
+    },
+    {
+      "path": "src/tsgr/cli/build_fixed_routing_models.py",
+      "size_bytes": 1975,
+      "sha256": "bde3e3c70e8d740f24b6b02fc690dc44435e49ed8847f8f883be9bac4a276d07"
+    },
+    {
+      "path": "src/tsgr/cli/build_hand_presence_reference.py",
+      "size_bytes": 1633,
+      "sha256": "ef6b9a44261bf94fbcf453e4afa7e6ac81b1d40087628fe186202d4694e01a8d"
+    },
+    {
+      "path": "src/tsgr/cli/build_sgrf_baselines.py",
+      "size_bytes": 3165,
+      "sha256": "84b9420e73a075ee656f7efd0cfae88025d7dd81cd91699752980e6e110d460d"
+    },
+    {
+      "path": "src/tsgr/cli/common.py",
+      "size_bytes": 4230,
+      "sha256": "448917ca55ddf40f1d537175010d7f8d1fff205c3bf7e6c68c21a8b10c38a465"
+    },
+    {
+      "path": "src/tsgr/cli/download_dataset.py",
+      "size_bytes": 1584,
+      "sha256": "1da91f01e2aa7508953d2571092c10cd78a6f6eb2ea0c299820aa99464b4bfdf"
+    },
+    {
+      "path": "src/tsgr/cli/download_model.py",
+      "size_bytes": 2329,
+      "sha256": "7a42ed86cf2170c55100de0a0ee1f09b897eb414781cf9a2a11d7f332dc43efa"
+    },
+    {
+      "path": "src/tsgr/cli/evaluate_fixed_end_to_end.py",
+      "size_bytes": 2554,
+      "sha256": "12066a6cb9abe2c2da7f50f667769bc59c37ed43971aef7b2f36b5ad9702204e"
+    },
+    {
+      "path": "src/tsgr/cli/evaluate_fixed_routing.py",
+      "size_bytes": 1975,
+      "sha256": "299abd7501007f6afff0bf008878bc8ccefd9b27a24d63150bb942ed03162c44"
+    },
+    {
+      "path": "src/tsgr/cli/evaluate_sgrf_baselines.py",
+      "size_bytes": 4989,
+      "sha256": "8ca6031d1136fff023dd21e19e53befd108fe3ba38c0866eb950c3c848cb66a2"
+    },
+    {
+      "path": "src/tsgr/cli/export_sgrf_evaluation_shard.py",
+      "size_bytes": 1850,
+      "sha256": "e01653813680d1fd59764f0c3ee5e5c018532663731d6b762f9be7057805acf0"
+    },
+    {
+      "path": "src/tsgr/cli/export_sgrf_portable_bundle.py",
+      "size_bytes": 2496,
+      "sha256": "09a59050dd33ec5d7e741214640955f7af145e0b7473ea87abf4076e71a88654"
+    },
+    {
+      "path": "src/tsgr/cli/generate_experiment_folds.py",
+      "size_bytes": 1225,
+      "sha256": "0613b53a71e796bd841ce3d3e8fe513a62c91b0fb55c34b6dd8a8cc40fd4fcf0"
+    },
+    {
+      "path": "src/tsgr/cli/import_sgrf_evaluation_shard.py",
+      "size_bytes": 1009,
+      "sha256": "454d1ce936b75ea6fa4ef51d4bfe9246e2b8bb04d9cf77c00ce979d3bcd9c143"
+    },
+    {
+      "path": "src/tsgr/cli/merge_method_results.py",
+      "size_bytes": 817,
+      "sha256": "25861efd47f6308f18c49fc93195d97d1c9493db9d141e19cdc897ff18512b90"
+    },
+    {
+      "path": "src/tsgr/cli/process_experiment_testing.py",
+      "size_bytes": 7220,
+      "sha256": "9a4630c3a0354eff46eae826b431abb9d552df48203d4af983bf26880586cd39"
+    },
+    {
+      "path": "src/tsgr/cli/process_experiment_training.py",
+      "size_bytes": 4129,
+      "sha256": "4965bcc1661c7a6453aaf2bc3d458e6d763422989530497e49c02261d1f62a7f"
+    },
+    {
+      "path": "src/tsgr/cli/report_sgrf_evaluation_progress.py",
+      "size_bytes": 2399,
+      "sha256": "0ef31fd63e53d2367aa3a30980a82f727a951456114cee5b8bd467b0c74509e3"
+    },
+    {
+      "path": "src/tsgr/cli/run_plcc_sensitivity.py",
+      "size_bytes": 2410,
+      "sha256": "6816b247b153cb4a50d2d14e308ac1229dc0f6356227bcc694a2dc74a7dc5987"
+    },
+    {
+      "path": "src/tsgr/cli/verify_reference_results.py",
+      "size_bytes": 1105,
+      "sha256": "52ef2b141180523d2ac3bbc280997e969cbf9ce9e8bae57add77464cad56788a"
+    },
+    {
+      "path": "src/tsgr/config.py",
+      "size_bytes": 9150,
+      "sha256": "76272cff3ac634e37b2d915acf7d26d07dc607f75ddf7cf180e417e95e5b7dc9"
+    },
+    {
+      "path": "src/tsgr/constants.py",
+      "size_bytes": 657,
+      "sha256": "eeb5babcf9b1616ddbb5eebc78aa60c790b4f9a5b2cb278c1337f078c4f69ad9"
+    },
+    {
+      "path": "src/tsgr/dataset/__init__.py",
+      "size_bytes": 706,
+      "sha256": "b22ad75a9b382e432f4563375a0561af810a3e57d20da1e0447de3186216295e"
+    },
+    {
+      "path": "src/tsgr/dataset/contract.py",
+      "size_bytes": 22493,
+      "sha256": "ab657cbfec3709e3c01fc5772e65d20531484b81cf6c25e5f8b027a526bdef7a"
+    },
+    {
+      "path": "src/tsgr/dataset/downloader.py",
+      "size_bytes": 7975,
+      "sha256": "0cee81e2e2aaa39b566e64733bebb7dac79c07d4dea5ca13deec612b3c315144"
+    },
+    {
+      "path": "src/tsgr/detection/__init__.py",
+      "size_bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "src/tsgr/detection/mediapipe_hand_landmarker.py",
+      "size_bytes": 23331,
+      "sha256": "546342b48d2ce59994989d8bbd41979548b36690f101d118b9364f396043d5a3"
+    },
+    {
+      "path": "src/tsgr/detection/policy.py",
+      "size_bytes": 3828,
+      "sha256": "e4df439d19aae0c983888b9ce106883dc576f5b9e6ba2ac706de32827024a863"
+    },
+    {
+      "path": "src/tsgr/detection/right_hand_selector.py",
+      "size_bytes": 2076,
+      "sha256": "935797cb8b6cf53780a085b45e1da852cb6e0714e1884463857fa6423b05a5b6"
+    },
+    {
+      "path": "src/tsgr/evaluation/__init__.py",
+      "size_bytes": 327,
+      "sha256": "995bee48a4c1b6d4b7987aa20d3a02590b2f1aecd4983c22bbd7d69012e5318a"
+    },
+    {
+      "path": "src/tsgr/evaluation/acceptance_calibration.py",
+      "size_bytes": 5407,
+      "sha256": "5f5d61b2eb247d932bcc9834b691bbec14c0cb92f61179b7f2cf6be29e716a01"
+    },
+    {
+      "path": "src/tsgr/evaluation/classifier.py",
+      "size_bytes": 16613,
+      "sha256": "2f40e6801c9504605e3366c12d1e2c9e0e1fa1c75aeda1b6fc08613936c9daec"
+    },
+    {
+      "path": "src/tsgr/evaluation/dataset_ground_truth_analysis.py",
+      "size_bytes": 14561,
+      "sha256": "be775f6ff75e78a006beda197f04be9a0f526d2a78f7cec22c5872c94a5a56a7"
+    },
+    {
+      "path": "src/tsgr/evaluation/experiment_evaluator.py",
+      "size_bytes": 57997,
+      "sha256": "a4a127413c47efa0d507d0ff8dc6e2fe32e889850f00203528fbfcad928629cf"
+    },
+    {
+      "path": "src/tsgr/evaluation/frozen_bootstrap_v42.py",
+      "size_bytes": 22843,
+      "sha256": "6deb2b5e9888023e627421889c56464a5f0c5b4dd8e893d0f27d35223869950f"
+    },
+    {
+      "path": "src/tsgr/evaluation/frozen_end_to_end_v42.py",
+      "size_bytes": 51544,
+      "sha256": "90a1204344e6bd3d6aa1efe65172727d052992b9269f9b3d1ff96a5b53a9a952"
+    },
+    {
+      "path": "src/tsgr/evaluation/frozen_plcc_v42.py",
+      "size_bytes": 29197,
+      "sha256": "cbf6a8e3151f10e7111de96b91887547487c69a7776c422ab57ecbadbcf5228b"
+    },
+    {
+      "path": "src/tsgr/evaluation/frozen_routing_v40.py",
+      "size_bytes": 24794,
+      "sha256": "12dee3930aa4d8e452868f293afb0655c659098aeef60a090a0ec50299e4b6a8"
+    },
+    {
+      "path": "src/tsgr/evaluation/frozen_runtime_v42.py",
+      "size_bytes": 15960,
+      "sha256": "f3e2ea1682627168507c6426e976fa49abcbccf67bf272cd5fd07f85e3d9b65d"
+    },
+    {
+      "path": "src/tsgr/evaluation/ground_truth.py",
+      "size_bytes": 2777,
+      "sha256": "76ff98de8c971d7d64f0fb522599c13f8c28ab5f5e031434287726e49dc62ba6"
+    },
+    {
+      "path": "src/tsgr/evaluation/hand_presence_reference.py",
+      "size_bytes": 16546,
+      "sha256": "5687853cbc873110b3cade8f2cb69bc49dd178cc46968aa96fab82b4d5127f26"
+    },
+    {
+      "path": "src/tsgr/evaluation/image_feature_support.py",
+      "size_bytes": 4941,
+      "sha256": "c42dd49a7af9f553109f5bc551016647b0862af03e862e4aa3a97e393d907b55"
+    },
+    {
+      "path": "src/tsgr/evaluation/io_utils.py",
+      "size_bytes": 2548,
+      "sha256": "fdf07455a97cc07ff1c960ae1940b0aae3f9cbe9adc5e018eb4c323f504f043d"
+    },
+    {
+      "path": "src/tsgr/evaluation/ranking_support.py",
+      "size_bytes": 5877,
+      "sha256": "d46d18b8c63ff2c82a14f02c7ab453e8467495eaa3f89ecc46ffb8596b6f4bf4"
+    },
+    {
+      "path": "src/tsgr/evaluation/reference_result_verification.py",
+      "size_bytes": 5692,
+      "sha256": "3cc25dbe68530fc729c32b3f4fc89ed0d0a24ba32c6e1a0a1324b6696b0005cf"
+    },
+    {
+      "path": "src/tsgr/evaluation/routing_support.py",
+      "size_bytes": 18016,
+      "sha256": "2819fa4e48525b228ad74441ead5e9c8febce8286055f0c3966aaf9dc6b5451a"
+    },
+    {
+      "path": "src/tsgr/evaluation/temporal_sequence.py",
+      "size_bytes": 5136,
+      "sha256": "f12f4eeda9d9e54eacab12002529cdd992eb4e9586df7def2961af65dbd4695e"
+    },
+    {
+      "path": "src/tsgr/evaluation/training_support.py",
+      "size_bytes": 7254,
+      "sha256": "1d32c212585aa4646fda82183a38eaa8b972efbde480e075d8360602a12371ea"
+    },
+    {
+      "path": "src/tsgr/experiments/__init__.py",
+      "size_bytes": 229,
+      "sha256": "b26e213306f709faf809083e215f05f5891adc5185c5a8a7e558dd37f5bfc861"
+    },
+    {
+      "path": "src/tsgr/experiments/folds.py",
+      "size_bytes": 15199,
+      "sha256": "cf89ecbd6e8fd7628505e326e0124d2a65b16ef46bb8d1bf0f13119b32f3f93c"
+    },
+    {
+      "path": "src/tsgr/experiments/model_building.py",
+      "size_bytes": 11385,
+      "sha256": "f2b779c1a78fa95de74e4a7649b3e44f1894de591f55627ae55917a48eb90037"
+    },
+    {
+      "path": "src/tsgr/features/__init__.py",
+      "size_bytes": 464,
+      "sha256": "ba75b5bd5efbeef79db6306d7e54274fa3ee823929626f7d3c2732d52e21371f"
+    },
+    {
+      "path": "src/tsgr/features/extractor.py",
+      "size_bytes": 8993,
+      "sha256": "025dd8c6e75ef86266d3d1d460b8bd647a6fe2e1297087f1040127202aa68ad2"
+    },
+    {
+      "path": "src/tsgr/features/schema.py",
+      "size_bytes": 12096,
+      "sha256": "65b9884e88c7cb6a114f02a565d0ac43b59a46221c288582eea954b3aba5ebc6"
+    },
+    {
+      "path": "src/tsgr/filtering/__init__.py",
+      "size_bytes": 203,
+      "sha256": "9dbfe10f43c23050595c0959b484f549efdec28cb620266af1640adac7ed25b4"
+    },
+    {
+      "path": "src/tsgr/filtering/base.py",
+      "size_bytes": 2341,
+      "sha256": "893591209816fa12fb3d7e3b818ac17470afcdb8d3435c1bc7d1278073a5f3b5"
+    },
+    {
+      "path": "src/tsgr/filtering/ema.py",
+      "size_bytes": 1089,
+      "sha256": "af0204dc587ee42a55b5eda93c8d802a1699674c217b9ecb689f055c77f477ad"
+    },
+    {
+      "path": "src/tsgr/filtering/factory.py",
+      "size_bytes": 2155,
+      "sha256": "15e559764ac17e0bafe909a50e8457c3bfd57cc4e38a4dd320eab7ecd8ea6f83"
+    },
+    {
+      "path": "src/tsgr/filtering/half_pound.py",
+      "size_bytes": 2816,
+      "sha256": "edaa72e9e047aff4c9e090edacc334fa256e6663801f2b453baaabec0e676bcb"
+    },
+    {
+      "path": "src/tsgr/filtering/kalman.py",
+      "size_bytes": 3778,
+      "sha256": "b8e31c8d314a85c89b15cd97b175b786ebfd98af14829958de0aba948203549f"
+    },
+    {
+      "path": "src/tsgr/filtering/one_euro.py",
+      "size_bytes": 2657,
+      "sha256": "0ac95677b7065b347c6a2b1393ade54906485379c8db9c33609e22dd21ed72bc"
+    },
+    {
+      "path": "src/tsgr/filtering/passthrough.py",
+      "size_bytes": 463,
+      "sha256": "5f01cc735221354d39ee6c583d7f53ad839d6f0f17b16a54966107f3c4fb8f16"
+    },
+    {
+      "path": "src/tsgr/inference.py",
+      "size_bytes": 8177,
+      "sha256": "0755394ac5b2efea74eae4e398b8a91b52f437e23767b027618228d6edd852fd"
+    },
+    {
+      "path": "src/tsgr/io/__init__.py",
+      "size_bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "src/tsgr/io/image_folder_source.py",
+      "size_bytes": 2061,
+      "sha256": "15b9a28670caea446c984100ff4065eb87b74860ea62e2e2dfe58d7d755d7204"
+    },
+    {
+      "path": "src/tsgr/pipeline/__init__.py",
+      "size_bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "src/tsgr/pipeline/frame_pipeline.py",
+      "size_bytes": 14954,
+      "sha256": "3501266dc300a2910939b306b6f848194087fc9fd47ea110bcb1ab289c2c64f5"
+    },
+    {
+      "path": "src/tsgr/preprocessing/__init__.py",
+      "size_bytes": 449,
+      "sha256": "16a435a937a20e080317592d0eb7b3971689ad9e89168dba61b5e704da327abd"
+    },
+    {
+      "path": "src/tsgr/preprocessing/roi.py",
+      "size_bytes": 3997,
+      "sha256": "18c4a93dd2eef3502a1d018fb5c922c0d7b7ae29efd15abf0eb30212100cda57"
+    },
+    {
+      "path": "src/tsgr/preprocessing/spatial_normalization.py",
+      "size_bytes": 8023,
+      "sha256": "7e17d9a39ea1e096081c859f95c90085d7990f733f2af4dcac5fcdb45a9c1418"
+    },
+    {
+      "path": "src/tsgr/processing/__init__.py",
+      "size_bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "src/tsgr/processing/image_folder_run.py",
+      "size_bytes": 5719,
+      "sha256": "664b129a93107c81a0ece0d282b785462d99358a92d3d6f08bf5fa8e24ab89c8"
+    },
+    {
+      "path": "src/tsgr/processing/image_outputs.py",
+      "size_bytes": 1058,
+      "sha256": "eb995163f464f33df7a76cefcc439daecbbee2b538fae87b129b19379564523a"
+    },
+    {
+      "path": "src/tsgr/processing/result_writer.py",
+      "size_bytes": 16448,
+      "sha256": "138aed1972cb7c00a0edf16c7955f7d1473d184224543b329450bd17548dd2cb"
+    },
+    {
+      "path": "src/tsgr/processing/test_take_audit.py",
+      "size_bytes": 52896,
+      "sha256": "2f3b0476a35137084f1dab07f00f5d3f45964723b057932844d16ac40e4b92b9"
+    },
+    {
+      "path": "src/tsgr/processing/training_photo_audit.py",
+      "size_bytes": 25355,
+      "sha256": "a9c9a62c61e2db64cf7e5809cdf567c5a89afb9d78ea978879237556f84ec6db"
+    },
+    {
+      "path": "src/tsgr/quality/__init__.py",
+      "size_bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "src/tsgr/quality/frame_quality.py",
+      "size_bytes": 4826,
+      "sha256": "54c65ea010dd1f4efe549d92faf1e75c17dfd007947a0cd6f4a073cc710ac945"
+    },
+    {
+      "path": "src/tsgr/quality/temporal_geometry.py",
+      "size_bytes": 4795,
+      "sha256": "7f31d1acf1eb0952bb84eacd966ab898eedf63461830a5fd5d57bad7c99d4397"
+    },
+    {
+      "path": "src/tsgr/reference_models/__init__.py",
+      "size_bytes": 533,
+      "sha256": "bfb9ece4fb1bf8bca8706077bad3d03e1190d0816da101bb23c8163a71044e00"
+    },
+    {
+      "path": "src/tsgr/reference_models/aggregation.py",
+      "size_bytes": 6908,
+      "sha256": "711bfb69efceaf2b9715be30074ed93ad7fbf2f0b775d0c2b18e5859515481fe"
+    },
+    {
+      "path": "src/tsgr/reference_models/builder.py",
+      "size_bytes": 30925,
+      "sha256": "0ffb52b715cf00d1732f0687606dbda348e80ed465773d4278a922eeb665a855"
+    },
+    {
+      "path": "src/tsgr/reference_models/covariance.py",
+      "size_bytes": 2729,
+      "sha256": "9e52f6260a3b8b4ad1fb4457d3320eb4e422bd79c6ad9f8622c92398917cd723"
+    },
+    {
+      "path": "src/tsgr/reference_models/loader.py",
+      "size_bytes": 4447,
+      "sha256": "b762afcae737a85a0f10fbf7d70e9136e91336b1b3b3661400b2b4670f2b02d0"
+    },
+    {
+      "path": "src/tsgr/reference_models/manifest.py",
+      "size_bytes": 7747,
+      "sha256": "89555f8b4754aef1485debee24367fe4b2c9ca23bf97817defe4fffb54376f0d"
+    },
+    {
+      "path": "src/tsgr/reference_models/masking.py",
+      "size_bytes": 2055,
+      "sha256": "bf8ee51512c23efeac9a52fd88d3a3fa22bfd16b36f1c27289ed23239eb18b0a"
+    },
+    {
+      "path": "src/tsgr/reference_models/outliers.py",
+      "size_bytes": 3295,
+      "sha256": "ab3f75112a3597cd13f85c26cfee4ff045f7fdc5c04cd1f41d5f3e0f828c3012"
+    },
+    {
+      "path": "src/tsgr/reference_models/provenance.py",
+      "size_bytes": 6740,
+      "sha256": "e353263ad2dba000f92ebbd4325e53607f65c1b46789462bc43d3f36c167600a"
+    },
+    {
+      "path": "src/tsgr/reference_models/repository.py",
+      "size_bytes": 6248,
+      "sha256": "91866bf90f799cf89d532b3f437fccbd29f185a28d43fa488684509b6f003c28"
+    },
+    {
+      "path": "src/tsgr/resources/default.yaml",
+      "size_bytes": 5245,
+      "sha256": "11b9ba6d3ccd90df890e050fdf7021981f8dcf6bbf7dc78c774586dcd4636347"
+    },
+    {
+      "path": "src/tsgr/types.py",
+      "size_bytes": 5577,
+      "sha256": "e478265f2d6b3b74e89aade26c1e4c5e870b3ffbe30360f5ff65c8fcea18d98b"
+    },
+    {
+      "path": "src/tsgr/utils/__init__.py",
+      "size_bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "src/tsgr/utils/natural_sort.py",
+      "size_bytes": 341,
+      "sha256": "c357eda14b9703e867779a088ecec58a5add44b003d0b6834b5b7a5abf9d2651"
+    },
+    {
+      "path": "src/tsgr/utils/run_paths.py",
+      "size_bytes": 1096,
+      "sha256": "00497fc5ce699f95830966dea9f6a5aeba7628e3f57e0cb031d31b4c96051317"
+    },
+    {
+      "path": "src/tsgr/utils/serialization.py",
+      "size_bytes": 2592,
+      "sha256": "3e1f5b87b66be37545a82ea281446ab669e449cfb47f6dc29ab3a2e2489c36e0"
+    },
+    {
+      "path": "src/tsgr/visualization/__init__.py",
+      "size_bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "src/tsgr/visualization/landmark_overlay.py",
+      "size_bytes": 4493,
+      "sha256": "93187352e01ff6e314dd4d9e65b922fade8ad607bc4d44158fd4aef9de36a258"
+    },
+    {
+      "path": "src/tsgr/visualization/matplotlib_backend.py",
+      "size_bytes": 455,
+      "sha256": "8e38c6d5bdff849bdf943e4e29d3921e38ddf29df55b6e75548e1906e4e9d9f0"
+    },
+    {
+      "path": "src/tsgr/visualization/overlay.py",
+      "size_bytes": 3080,
+      "sha256": "29de7cbd921fda614a56971d1c98bf7d1c097e517367fab9b148a9ed388f8664"
+    },
+    {
+      "path": "src/tsgr/visualization/reference_model_space.py",
+      "size_bytes": 44589,
+      "sha256": "267139a39807a8218ec90dbd840e320f701f98754d047435342be1b8a52c3f60"
+    },
+    {
+      "path": "tests/conftest.py",
+      "size_bytes": 196,
+      "sha256": "fdef5ef4ce01989ab1fb5907e8fa3ae86f2b3bcdb71cb55f6458671f1ff93b49"
+    },
+    {
+      "path": "tests/test_classification_branch.py",
+      "size_bytes": 2656,
+      "sha256": "2f4c4a4ac15a597117de53a7c52cca3bd0ea3955ad5f24d402f7abe833918c06"
+    },
+    {
+      "path": "tests/test_config.py",
+      "size_bytes": 445,
+      "sha256": "6151ee44d97444b24087b17f8dc42529292f4cc3f669e9a64294953aba73d61d"
+    },
+    {
+      "path": "tests/test_feature_extractor.py",
+      "size_bytes": 2918,
+      "sha256": "e7ee9c752c21e39533f17e9de47ea74a9f93295b6aa15758ba82017ae48769b4"
+    },
+    {
+      "path": "tests/test_feature_schema.py",
+      "size_bytes": 1167,
+      "sha256": "ae2401019d7ff1b6d3a9533bf0005d7b9c36d3b98597bf7636250da17884ed7b"
+    },
+    {
+      "path": "tests/test_feature_writer.py",
+      "size_bytes": 2268,
+      "sha256": "ad66e0c43f932761dfa0187560e1172a0b659834abdb1c87ccac6358b33d7fda"
+    },
+    {
+      "path": "tests/test_frozen_end_to_end_v42.py",
+      "size_bytes": 4937,
+      "sha256": "0af9cfbf6c9f5d3ab44eaf583f844450989bd034417031af998a013bef4065da"
+    },
+    {
+      "path": "tests/test_frozen_routing_v40_1.py",
+      "size_bytes": 1884,
+      "sha256": "3d9d7201a78c2f61ab4086f35041955bac620a8aada280df0fb7f338c7b38a20"
+    },
+    {
+      "path": "tests/test_frozen_runtime_plcc_v42.py",
+      "size_bytes": 4879,
+      "sha256": "67fbf7fcaf079e007db85e43b8ba55281e47f4c7a425c13e91b7bb05cdd43bee"
+    },
+    {
+      "path": "tests/test_image_outputs.py",
+      "size_bytes": 573,
+      "sha256": "403204d7e3cbbbf83adf90c2bae92a3e52c4593ad7b4affa76a4eefef7fa41e2"
+    },
+    {
+      "path": "tests/test_inference_api_v42_15.py",
+      "size_bytes": 8495,
+      "sha256": "4731b06cab1a1cff7a054d5103a8fca3209d1d5c9b6e41e1e51ff1d1c6ef4507"
+    },
+    {
+      "path": "tests/test_parallel_testing_and_scenarios_v17.py",
+      "size_bytes": 5272,
+      "sha256": "66448164baf1da7694ad33f27a055029a90a70e94394d2fb2938765baf142b40"
+    },
+    {
+      "path": "tests/test_parallel_testing_v10.py",
+      "size_bytes": 974,
+      "sha256": "bc29777254faa97ffeae223151242ad705485e5b2cff2c952e0cf6c60b0c55ac"
+    },
+    {
+      "path": "tests/test_parallel_training_processing_v16.py",
+      "size_bytes": 4473,
+      "sha256": "302e7ae5921eb781fe05b79ffb4ab2bec7bd3f4038e87e527d200097624aa120"
+    },
+    {
+      "path": "tests/test_public_dataset_runtime.py",
+      "size_bytes": 4759,
+      "sha256": "46e747b2b28315e04d4fa7066757828ab5fe5bfdd45362cf150a8beb3fe0a51c"
+    },
+    {
+      "path": "tests/test_public_plan_portability_v42_8.py",
+      "size_bytes": 3050,
+      "sha256": "facfb9634039b1b013636bc4bc23ae9d079d722f219ef9f746c3aa762e2d9b1a"
+    },
+    {
+      "path": "tests/test_quality.py",
+      "size_bytes": 990,
+      "sha256": "26004c799c5944d1ef56c32b5f03dabae860a8c4a79a14adb60cf1af1c17b344"
+    },
+    {
+      "path": "tests/test_quality_policy.py",
+      "size_bytes": 899,
+      "sha256": "cb511ec2fc70ea0443b062a097367267c43c5692617d63f0593a7ae490bb38ae"
+    },
+    {
+      "path": "tests/test_reference_aggregation.py",
+      "size_bytes": 1253,
+      "sha256": "de5846868bc9d4e70264f23a6188a35e64c31756568ab76e22cfa13597e7f157"
+    },
+    {
+      "path": "tests/test_reference_builder.py",
+      "size_bytes": 7017,
+      "sha256": "fbe2348d84eeb434df01342b27ad980ada810cc94a6347b73db0114dc5ca8ba8"
+    },
+    {
+      "path": "tests/test_reference_dataset_run_discovery.py",
+      "size_bytes": 478,
+      "sha256": "671e8ae1e6d5e5069dac3a2e7bd37a8c9dfd795abe4c5ca8f30aae45b14ef13a"
+    },
+    {
+      "path": "tests/test_reference_manifest.py",
+      "size_bytes": 1701,
+      "sha256": "1d456fe47cde629d93a7261788d749dc2c9ae55bf3b7be9f61a303f5b063aebd"
+    },
+    {
+      "path": "tests/test_reference_outliers_mask.py",
+      "size_bytes": 1372,
+      "sha256": "ccfda436addf3178aa5fd744b0d0e91877c54906c1caf454788ec7a47de822bd"
+    },
+    {
+      "path": "tests/test_reference_provenance.py",
+      "size_bytes": 1222,
+      "sha256": "e2a084e8d00bbcc4467e15c302eaeff87796799fa67f17b8e4c77dac82f1b975"
+    },
+    {
+      "path": "tests/test_reference_result_verification.py",
+      "size_bytes": 2296,
+      "sha256": "ed4d9a3a2b5e719a0f84c902dcf18c08e224c8523369d33cf504a3382862fe63"
+    },
+    {
+      "path": "tests/test_result_writer_normalization.py",
+      "size_bytes": 1341,
+      "sha256": "174c250202716093ad2a161923c0179d6dd14f39643ae70a5921565bbb3b527e"
+    },
+    {
+      "path": "tests/test_reviewer_reproduction_script.py",
+      "size_bytes": 4694,
+      "sha256": "de3dc48b8d242b1ec630d6465cc3aacd2fb677587e504cf90be8b9ae9f68b539"
+    },
+    {
+      "path": "tests/test_right_hand_selector.py",
+      "size_bytes": 921,
+      "sha256": "767fe46ccedd528bc55420d4391e24b95562cc0a12b59f3b2dbbb129ad352400"
+    },
+    {
+      "path": "tests/test_robust_detection_v11.py",
+      "size_bytes": 5806,
+      "sha256": "9de0e8a3e5e63049d9b6bf960010dc2c5ff86ba90ba27f40ff51b434c155f6d7"
+    },
+    {
+      "path": "tests/test_roi.py",
+      "size_bytes": 1008,
+      "sha256": "20f973d62c14c4647031ea339c03104b10efebb44cfeb9e41780f7dd3060a99d"
+    },
+    {
+      "path": "tests/test_run_paths.py",
+      "size_bytes": 413,
+      "sha256": "2b05ce69cbb1fe1a9cfd8700bcd41226def5efe4cdd290fa53d61a51f1d1e126"
+    },
+    {
+      "path": "tests/test_sequence_reset_v10.py",
+      "size_bytes": 445,
+      "sha256": "ff4c39a482fc0ab29953619f11cc5aa2f8930267d8b8ffec8a1453dd5d5bd85c"
+    },
+    {
+      "path": "tests/test_sgrf_baseline_adapters_v24.py",
+      "size_bytes": 10035,
+      "sha256": "b6ee6bf46886afc683c0421d73d48e3b444f6185b31ae8f806ac785a8d460b9c"
+    },
+    {
+      "path": "tests/test_sgrf_distributed_v42_14.py",
+      "size_bytes": 6216,
+      "sha256": "140964c0b47f0e4ee4f53e638ab4b55220ea7729860864683ab9e16228194849"
+    },
+    {
+      "path": "tests/test_sgrf_portability_v42_2.py",
+      "size_bytes": 5830,
+      "sha256": "5b01c0f0b039441d448b5f855973c8e56d1d5cb904a07221c3f22f654ec56a56"
+    },
+    {
+      "path": "tests/test_spatial_normalization.py",
+      "size_bytes": 4000,
+      "sha256": "8af5ba4f87fa4b87eee71b7bb6c3875a276145b0658485460401dcdc6425c319"
+    },
+    {
+      "path": "tests/test_temporal_filters.py",
+      "size_bytes": 1481,
+      "sha256": "86ff6cd6d85f5f51ac08c249ad6c6a7e870031efe298655a1aed1e3afa408da6"
+    },
+    {
+      "path": "tests/test_temporal_geometry.py",
+      "size_bytes": 1257,
+      "sha256": "3be7dd1aa51f658d4839a52801e862028e4151ebe2b6836999b3fe211fd5b283"
+    },
+    {
+      "path": "tests/test_worker_shutdown_v12.py",
+      "size_bytes": 1617,
+      "sha256": "3b3fdd062898315197e2bfd07315d1af4be78bccfee96bc8f9a1a5a2fbcf5c9e"
+    }
+  ]
+}

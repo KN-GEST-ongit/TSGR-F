@@ -1,0 +1,7 @@
+{
+  "schema_version": "tsgrf_frozen_routing_architecture_v40",
+  "global": {"method": "nearest_exemplar", "metric": "inverse_within_weighted_euclidean"},
+  "os_specialist": {"gate": "baseline_top2_exact_OS", "alpha": 0.65, "threshold_training": "TRAIN_LOO_widest_optimal_plateau_midpoint"},
+  "iy_specialist": {"gate": "baseline_top2_exact_IY", "feature_ids": ["img2d.bend.index.pip", "img2d.straightness.index", "spread.segment_mean.thumb_index", "img2d.distance.wrist_tip.index", "bend.index.pip"], "weights": "TRAIN_pair_inverse_within"},
+  "c_rescue": {"gate": "baseline_top1_A_rescue_C_only", "method": "robust_z_rms", "feature_selection": "TRAIN_C_vs_rest_Fisher_top5"}
+}
